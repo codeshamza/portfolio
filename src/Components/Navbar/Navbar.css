@@ -1,0 +1,208 @@
+/* ===========Navbar========= */
+nav{
+  font-family: sans-serif;
+}
+.main_container {
+    display: grid;
+    height: 10rem;
+    grid-template-columns: 5rem 0.35fr 1fr 1.7fr 0.5fr 2rem;
+  }
+  /* ============ LOGO========== */
+  .logo {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+    height: 10rem;
+  }
+  
+  .logo img {
+    display: flex;
+    height: 7rem;
+    width: 7rem;
+    transition: 1s;
+  }
+  .logo img:hover {
+ 
+    animation: myRotate 3s infinite linear;
+  }
+  
+  /* ========Rotating Anime======== */
+  @keyframes myRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+
+  }
+  
+  /* ==============Menu Links============ */
+  .menu_link {
+    grid-column: 3/4;
+  }
+  .menu_link ul {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu_link ul li a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--r-c);
+  }
+  .menu_link ul li a:hover {
+    font-weight: 600;
+    transition: 0.1s;
+    color: var(--t-c);
+  }
+  
+  
+  /* ====Anime======== */
+  
+  .menu_link ul li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 0.25rem var(--r-c);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+  .menu_link ul li a:hover:after {
+    transform: scaleX(1);
+  }
+  /* =====Active Navlink Css== */
+  .menu_link ul li a.active{
+    font-weight: 600;
+    transition: 0.1s;
+    color: var(--t-c);
+  }
+  .menu_link ul li a.active::after{
+    transform: scaleX(1);
+  }
+  
+  /* ===========Social Links========== */
+  .social_links {
+    grid-column: 5/6;
+  }
+  .social_links ul {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* =============ICONS============= */
+  .Social_Icon {
+    cursor: pointer;
+    height: 2.4rem;
+    width: 2.4rem;
+    color: var(--r-c);
+  }
+  .Social_Icon:hover {
+    color: var(--t-c);
+    transition: .5s;
+  }
+  /* ========= HamBurger Menu========= */
+  .ham_burger_menu {
+    display: none;
+  }
+
+  
+/* ========== Responsive Css========== */
+/* ==========For Ipads ============ */
+@media (max-width: 1260px) {
+  html{
+    font-size: 55%;
+  }
+    .main_container {
+      grid-template-columns: 4rem 2fr 3fr 1.2fr 1.2fr 1rem;
+    }
+    .logo,
+    .menu_link ul,
+    .social_links .desktop_icons {
+      height: 12rem;
+    }
+    .menu_link ul li a {
+      font-size: 2.2rem;
+    }
+
+  }
+  /* ========== For Mobiles=========== */
+  @media (max-width: 757px) {
+    html{
+      font-size: 42%;
+    }
+    .main_container {
+      grid-template-columns: 3rem 3fr 2fr 2rem 3rem;
+
+    }
+    .menu_link,
+    .social_links .desktop_icons {
+      height: 0;
+      display: none;
+    }
+    .logo img {
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+    .social_links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .ham_burger_menu {
+      cursor: pointer;
+      display: block;
+    }
+  
+    .ham_size {
+      color: var(--t-c);
+    }
+    .ham_clicked{
+      height: 5rem;
+      width: 5rem;
+    }
+    .mobile_menu_links {
+      display: grid;
+      height: 28rem;
+      position: relative;
+      grid-column: 1/6;
+      z-index: 99;
+      align-items: center;
+      background-color: var(--p-c);
+      box-shadow: #30f8ff40 0px 17px 30px -5px,
+        rgba(0, 208, 255, 1) 0px 8px 16px -8px;
+
+    }
+    
+    .mobile_menu_links ul {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    .mobile_menu_links ul li a {
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--r-c);
+    }
+    .social_links {
+      display: flex;
+      grid-row: 1/2;
+      grid-column: 3/5;
+    }
+  }
+
+  /* ======For Smaller Screens======= */
+  @media (max-width: 400px) {
+    html{
+      font-size: 38%;
+    }
+  }
+    /* ======For Smaller Screens======= */
+    @media (max-width: 230px) {
+      html{
+        font-size: 27%;
+      }
+    }

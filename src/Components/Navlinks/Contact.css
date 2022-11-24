@@ -1,0 +1,441 @@
+.Contact_heading {
+  margin: 2rem 0;
+}
+.Main_Contactform {
+  display: flex;
+  height: 50rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 4rem;
+  font-family: sans-serif;
+  margin-bottom: 4rem;
+}
+/* ===== Social Contacts===== */
+.social_contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  align-items: center;
+  color: var(--r-c);
+}
+.social_contact_icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.con_icon_child {
+  border: 0.15rem solid var(--r-c);
+  display: flex;
+  height: 5rem;
+  width: 20rem;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+cursor: pointer;
+  transition: 0.5s;
+  box-shadow: rgba(0, 238, 255, 0.1) 0rem -3rem 6rem -1.2rem inset,
+    rgba(0, 242, 255, 0.3) 0rem 1.8rem 3.6rem -1.8rem inset;
+}
+
+.con_icon_child:hover {
+  color: var(--t-c);
+  transform: translateY(-0.2rem);
+  border: 0.15rem solid var(--t-c);
+  box-shadow: rgba(0, 229, 255, 0.25) 0rem 5.4rem 5.5rem,
+    rgba(0, 242, 255, 0.12) 0rem -1.2rem 3rem,
+    rgba(0, 238, 255, 0.12) 0rem 0.4rem 0.6rem,
+    rgba(0, 247, 255, 0.17) 0rem 1.2rem 1.3rem,
+    rgba(5, 247, 255, 0.09) 0rem -0.3rem 0.5rem;
+}
+
+/* =====SPAN=== */
+.contact_span{
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: "Rubik",sans-serif;
+  color: var(--r-c);
+}
+/* =======Conact Form Container ======== */
+.contact_form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding-top: 2.5rem;
+  
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.7rem;
+}
+::placeholder {
+  font-size: 1.2rem;
+  color: var(--t-c);
+}
+
+#in_name {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 0.1rem solid var(--r-c);
+  background-color: var(--f-bg);
+  color: var(--t-c);
+  height: 4rem;
+  width: 50rem;
+  box-shadow: rgba(0, 238, 255, 0) 0rem -3rem 6rem -1.2rem inset,
+    rgba(0, 242, 255, 0.3) 0rem 1.8rem 3.6rem -1.8rem inset;
+}
+#in_name:focus {
+  outline: 0.1rem solid var(--t-c);
+  box-shadow: none;
+}
+#in_email {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  padding: 1rem;
+  border: 0.1rem solid var(--r-c);
+  color: var(--t-c);
+  outline: none;
+  background-color: var(--f-bg);
+  height: 4rem;
+  width: 50rem;
+  box-shadow: rgba(0, 238, 255, 0) 0rem -3rem 6rem -1.2rem inset,
+    rgba(0, 242, 255, 0.3) 0rem 1.8rem 3.6rem -1.8rem inset;
+}
+#in_email:focus {
+  box-shadow: none;
+  outline: 0.1rem solid var(--t-c);
+}
+#in_ta {
+  font-size: 1.6rem;
+  padding: 1rem;
+  height: 15rem;
+  color: var(--t-c);
+  width: 50rem;
+  border: 0.1rem solid var(--r-c);
+  resize: horizontal;
+  outline: none;
+  background-color: var(--f-bg);
+  box-shadow: rgba(0, 238, 255, 0) 0rem -3rem 6rem -1.2rem inset,
+    rgba(0, 242, 255, 0.3) 0rem 1.8rem 3.6rem -1.8rem inset;
+}
+#in_ta:focus {
+  box-shadow: none;
+  outline: 0.1rem solid var(--t-c);
+}
+#in_button {
+  height: 3.5rem;
+  width: 18rem;
+  background-color: transparent;
+  color: var(--r-c);
+  border: 0.1rem solid var(--r-c);
+  cursor: pointer;
+  border-bottom: 0.2rem solid var(--r-c);
+}
+
+
+ /* ========== Responsive Css========== */
+/* ==========For Ipads ============ */
+@media (max-width: 1260px) {
+  .Contact_heading {
+    margin-top: 5rem;
+  }
+
+  .Main_Contactform {
+    margin-top: 2rem;
+    height: 90rem;
+    row-gap: 6rem;
+    margin-bottom: 4rem;
+  }
+  /* ===== Social Contacts===== */
+  .social_contact {
+    column-gap: 2rem;
+    flex-direction: column;
+    row-gap: 1rem;
+    color: var(--r-c);
+  }
+  .social_contact_icon {
+    height: 4rem;
+    width: 4rem;
+  }
+  
+  .con_icon_child {
+    border: 0.2rem solid var(--r-c);
+    height: 10rem;
+    width: 30rem;
+    column-gap: 1rem;
+  }
+  
+  
+  /* =====SPAN=== */
+  .contact_span{
+    font-size: 2.2rem;
+  }
+  /* =======Conact Form Container ======== */
+  .contact_form_container {
+    row-gap: 2rem;
+  }
+  form {
+    row-gap: 2rem;
+  }
+  ::placeholder {
+    font-size: 1.6rem;
+  }
+  
+  #in_name {
+    font-size: 1.6rem;
+    border: 0.2rem solid var(--r-c);
+    height: 6rem;
+    width: 60rem;
+  }
+
+  #in_email {
+    font-size: 1.6rem;
+    border: 0.2rem solid var(--r-c);
+    height: 6rem;
+    width: 60rem;
+  }
+  #in_email:focus {
+    box-shadow: none;
+    outline: 0.2rem solid var(--t-c);
+  }
+  #in_ta {
+    font-size: 2rem;
+    padding: 1rem;
+    height: 24rem;
+    width: 60rem;
+    border: 0.2rem solid var(--r-c);  
+  }
+  #in_button {
+    height: 4rem;
+    width: 25rem;
+    border: 0.2rem solid var(--r-c);
+    border-bottom: 0.4rem solid var(--r-c);
+  }
+    }
+    /* ========== For Mobiles=========== */
+    @media (max-width: 757px) {
+      .Contact_heading {
+        margin-top: 6vw;
+      }
+      .Main_Contactform {
+        margin-top: 5rem;
+        height: 125rem;
+        row-gap: 5rem;
+        margin-bottom: 8rem;
+      }
+      /* ===== Social Contacts===== */
+      .social_contact {
+        column-gap: 2rem;
+        flex-direction: column;
+        row-gap: 1rem;
+        color: var(--r-c);
+      }
+      .social_contact_icon {
+        height: 4rem;
+        width: 4rem;
+      }
+      
+      .con_icon_child {
+        border: 0.2rem solid var(--r-c);
+        height: 11rem;
+        width: 36rem;
+        column-gap: 1rem;
+      }
+      
+      
+      /* =====SPAN=== */
+      .contact_span{
+    
+        font-size: 2.2rem;
+      }
+      /* =======Conact Form Container ======== */
+      .contact_form_container {
+        row-gap: 3rem;
+      }
+      form {
+        row-gap: 3rem;
+      }
+      ::placeholder {
+        font-size: 1.6rem;
+      }
+      
+      #in_name {
+        font-size: 1.6rem;
+        border: 0.2rem solid var(--r-c);
+        height: 7rem;
+        width: 80vw;
+      }
+    
+      #in_email {
+        font-size: 1.6rem;
+        border: 0.2rem solid var(--r-c);
+        height: 7rem;
+        width: 80vw;
+      }
+      #in_email:focus {
+        box-shadow: none;
+        outline: 0.2rem solid var(--t-c);
+      }
+      #in_ta {
+        font-size: 2rem;
+        padding: 1rem;
+        height: 28rem;
+        width: 80vw;
+        border: 0.2rem solid var(--r-c);  
+      }
+      #in_button {
+        height: 5rem;
+        width: 28rem;
+        border: 0.15rem solid var(--r-c);
+        border-bottom: 0.4rem solid var(--r-c);
+      }
+    }
+
+      /* ======For Smaller Screens======= */
+  @media (max-width: 400px) {
+    .Contact_heading {
+      margin-top: 5vw;
+    }
+    .Main_Contactform {
+      margin-top: 2vw;
+      height: 94rem;
+      row-gap: 4rem;
+      margin-bottom: 8rem;
+    }
+    /* ===== Social Contacts===== */
+    .social_contact {
+      column-gap: 2rem;
+      margin-top: 1rem;
+      row-gap: 1.5rem;
+      color: var(--r-c);
+    }
+    .social_contact_icon {
+      height: 4rem;
+      width: 4rem;
+    }
+    
+    .con_icon_child {
+      border: 0.12rem solid var(--r-c);
+      height: 9rem;
+      width: 24rem;
+      column-gap: 1rem;
+    }
+    
+    
+    /* =====SPAN=== */
+    .contact_span{
+    padding-top: 2rem;
+  
+      font-size: 2.2rem;
+    }
+    /* =======Conact Form Container ======== */
+    form {
+      row-gap: 1.5rem;
+    }
+    ::placeholder {
+      font-size: 1.6rem;
+    }
+    
+    #in_name {
+      font-size: 1.6rem;
+      border: 0.1rem solid var(--r-c);
+      height: 6rem;
+      width: 50rem;
+    }
+  
+    #in_email {
+      font-size: 1.6rem;
+      border: 0.1rem solid var(--r-c);
+      height: 6rem;
+      width: 50rem;
+    }
+    #in_ta {
+      font-size: 2rem;
+      padding: 1rem;
+      height: 24rem;
+      width: 50rem;
+      border: 0.1rem solid var(--r-c);  
+    }
+    #in_button {
+      height: 5rem;
+      width: 28rem;
+      border: 0.2rem solid var(--r-c);
+      border-bottom: 0.4rem solid var(--r-c);
+    }
+  }
+  @media (max-width: 330px) {
+    .Contact_heading {
+      margin-top: 4vw;
+    }
+    .Main_Contactform {
+      margin-top: 3rem;
+      height: 85rem;
+      row-gap: 4rem;
+      margin-bottom: 8rem;
+    }
+    /* ===== Social Contacts===== */
+    .social_contact {
+      column-gap: 2rem;
+      margin-top: 1rem;
+      flex-direction: column;
+      row-gap: 2rem;
+      color: var(--r-c);
+    }
+
+    
+    .con_icon_child {
+      border: 0.12rem solid var(--r-c);
+      height: 9rem;
+      width: 20rem;
+      column-gap: 1rem;
+    }
+    
+    
+    /* =====SPAN=== */
+    .contact_span{
+    padding-top: 2rem;
+margin: 0 3vw;
+      font-size: 1.8rem;
+    }
+    /* =======Conact Form Container ======== */
+    form {
+      row-gap: 2rem;
+    }
+    ::placeholder {
+      font-size: 1.8rem;
+    }
+    
+    #in_name {
+      font-size: 1.8rem;
+      border: 0.1rem solid var(--r-c);
+      height: 5rem;
+      width: 90vw;
+    }
+  
+    #in_email {
+      font-size: 1.8rem;
+      border: 0.1rem solid var(--r-c);
+      height: 5rem;
+      width: 90vw;
+    }
+    #in_ta {
+      font-size: 2.4rem;
+      padding: 1rem;
+      height: 18rem;
+      width: 90vw;
+      border: 0.1rem solid var(--r-c);  
+    }
+    #in_button {
+      height: 5rem;
+      width: 40vw;
+      border: 0.2rem solid var(--r-c);
+      border-bottom: 0.4rem solid var(--r-c);
+    }
+  }

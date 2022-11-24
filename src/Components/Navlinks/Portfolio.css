@@ -1,0 +1,278 @@
+.portfolio_projects_parent {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+.portfolio_projects_child {
+  margin: 3rem 5rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  transition: 0.1s;
+  flex-wrap: wrap;
+}
+.portfolio_projects_child_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 38rem;
+  width: 37rem;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.portfolio_projects_child_card_image {
+  border: 0.15rem solid var(--r-c);
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  align-items: center;
+  border-radius: 1rem;
+  height: 22rem;
+  width: 35rem;
+}
+.portfolio_projects_child_card_image:hover {
+  opacity: 0.8;
+  transform: translateY(-0.5rem);
+  border: 0.15rem solid var(--t-c);
+}
+.portfolio_projects_child_card_image img {
+  border-radius: 1rem;
+  height: 20rem;
+  width: 32.5rem;
+}
+
+/* ====Product Info======= */
+.text_container {
+  color: var(--t-c);
+  margin: 0.5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text_container h1 {
+  font-family: monospace;
+  font-size: 2.3rem;
+}
+.text_container p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  opacity: 0.8;
+}
+
+/* ==== Categories ==== */
+.categories {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 0.8rem;
+}
+.categories h3 {
+  font-family: sans-serif;
+  width: 10rem;
+  height: 2.5rem;
+  display: flex;
+  font-size: 1.2rem;
+  transition: .4s;
+  letter-spacing: .1rem;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--r-c);
+  color: var(--p-c);
+}
+.categories h3:hover{
+  color: var(--r-c);
+  background-color: var(--p-c);
+}
+
+
+
+  /* ========== Responsive Css========== */
+/* ==========For Ipads ============ */
+@media (max-width: 1080px) {
+  .portfolio_projects_parent {
+    margin-top: 4rem;
+  }
+  .portfolio_projects_child {
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  .portfolio_projects_child_items {
+    height: 40rem;
+    width: 40rem;
+  }
+  .portfolio_projects_child_card_image {
+    border: 0.2rem solid var(--r-c);
+    height: 24rem;
+    width: 40rem;
+  }
+  .portfolio_projects_child_card_image:hover {
+    border: 0.25rem solid var(--t-c);
+  }
+  .portfolio_projects_child_card_image img {
+    height: 21.5rem;
+    width: 37.5rem;
+  }
+  
+  /* ====Product Info======= */
+  .text_container h1 {
+    font-family: monospace;
+    font-size: 2.5rem;
+  }
+  .text_container p {
+    font-size: 1.5rem;
+  }
+  
+  /* ==== Categories ==== */
+  .categories {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+    }
+    /* ========== For Mobiles=========== */
+    @media (max-width: 810px) {
+      .portfolio_projects_parent {
+        margin-top: 5rem;
+      }
+      .portfolio_projects_child {
+        margin-top: 4rem;
+        column-gap: 1rem;
+        row-gap: 2rem;
+      }
+      .portfolio_projects_child_items {
+        height: 50rem;
+        width: 55rem;
+      }
+      .portfolio_projects_child_card_image {
+        border: 0.25rem solid var(--r-c);
+        height: 36rem;
+        width: 55rem;
+      }
+      .portfolio_projects_child_card_image:hover {
+        border: 0.3rem solid var(--t-c);
+      }
+      .portfolio_projects_child_card_image img {
+        height: 33rem;
+        width: 52rem;
+      }
+      
+      /* ====Product Info======= */
+      .text_container {
+        color: var(--t-c);
+        margin: 0.8rem 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .text_container h1 {
+        font-family: monospace;
+        font-size: 2.6rem;
+      }
+      .text_container p {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+
+    }
+
+      /* ======For Smaller Screens======= */
+  @media (max-width: 400px) {
+    .portfolio_projects_parent {
+      margin-top: 5rem;
+    }
+    .portfolio_projects_child {
+      margin-top: 5rem;
+      column-gap: 1rem;
+      row-gap: 2rem;
+    }
+    .portfolio_projects_child_items {
+      height: 50rem;
+      width: 55rem;
+    }
+    .portfolio_projects_child_card_image {
+      border: 0.25rem solid var(--r-c);
+      height: 32.5rem;
+      width: 45.5rem;
+    }
+    .portfolio_projects_child_card_image:hover {
+      border: 0.25rem solid var(--t-c);
+    }
+    .portfolio_projects_child_card_image img {
+      height: 30rem;
+      width: 43rem;
+    }
+    
+    /* ====Product Info======= */
+    .text_container {
+      color: var(--t-c);
+      margin: 1rem 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .text_container h1 {
+      font-family: monospace;
+      font-size: 2.8rem;
+    }
+    .text_container p {
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+    
+  }
+  @media (max-width: 300px) {
+    .portfolio_projects_parent {
+      margin-top: 3rem;
+    }
+    .portfolio_projects_child {
+      margin-top: 5rem;
+      column-gap: 1rem;
+      row-gap: 2rem;
+    }
+    .portfolio_projects_child_items {
+      height: 45rem;
+      width: 55rem;
+    }
+    .portfolio_projects_child_card_image {
+      border: 0.25rem solid var(--r-c);
+      height: 26rem;
+      width: 36rem;
+    }
+    .portfolio_projects_child_card_image:hover {
+      border: 0.25rem solid var(--t-c);
+    }
+    .portfolio_projects_child_card_image img {
+      height: 24rem;
+      width: 34rem;
+    }
+    
+    /* ====Product Info======= */
+    .text_container {
+      color: var(--t-c);
+      margin: 1rem 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .text_container h1 {
+      font-family: monospace;
+      font-size: 2.8rem;
+    }
+    .text_container p {
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+  }

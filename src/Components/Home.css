@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--t-c);
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+:root {
+  --p-c: rgba(0, 10, 31, 1);
+  --t-c: white;
+  --r-c: #61dbfb;
+}
+
+/* ==========ScrollBar======= */
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 20%;
+  cursor: pointer;
+  background-color: var(--p-c);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--r-c);
+}
+/* ==============Body============= */
+/* ========== Section : Main-txt ======== */
+body {
+  font-family: "Rubik", sans-serif;
+  overflow: hidden;
+  background-color: var(--p-c);
+}
+::selection {
+  color: var(--t-c);
+  background: var(--r-c);
+}
+.main_txt {
+  height: 90vh;
+  background-image: url(../Images/MyCoder.png), url(../Images/MyCoding.png),
+    url(../Images/MyHtml.png), url(../Images/MyDino.png),
+    url(../Images/MyJs.png), url(../Images/MyPaintBrush.png);
+  background-size: 20rem 20rem, 5rem 5rem, 5rem 5rem, 10rem 10rem, 7rem 7rem,
+    15rem 15rem;
+  background-repeat: no-repeat;
+  background-position: 5% 85%, 20% 60%, 95% 30%, 5% top, 95% 80%, 80% 70%;
+  animation: float 2.5s 1;
+}
+@keyframes float {
+  20% {
+    background-position: bottom;
+  }
+  80% {
+    background-position: top;
+  }
+}
+.txt {
+  display: flex;
+  padding-top: 10vh;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  animation-duration: 1.6s;
+  animation-delay: 1.7s;
+  cursor: default;
+}
+.txt p {
+  font-size: 4rem;
+}
+.txt h1 {
+  font-size: 7rem;
+  letter-spacing: -0.1rem;
+}
+.inner {
+  transition: 0.4s;
+  color: var(--r-c);
+}
+.inner:hover {
+  letter-spacing: 0rem;
+  font-size: 7.4rem;
+}
+.outer {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.outer:hover {
+  opacity: 1;
+  font-size: 7.3rem;
+  letter-spacing: 0.1rem;
+}
+
+/* ==button== */
+.home_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  column-gap: 1rem;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+.h_btn {
+  height: 6rem;
+  width: 16rem;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 0.2rem solid var(--r-c);
+  color: var(--t-c);
+  border-radius: 12rem;
+  transition: 0.5s;
+}
+.h_btn:hover {
+  background-color: var(--r-c);
+  font-size: 1.7rem;
+}
+
+/* ====Hero Projects Container========= */
+
+.home_portfolio_projects_parent {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  margin-top: 5rem;
+  background-image: url(../Images/MyLaptop.png), url(../Images/MyNextJs.png);
+  background-size: 8rem 8rem, 4rem;
+  background-repeat: no-repeat;
+  background-position: 95% 88%, 4% -5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ====Hero Preojects Button ===== */
+.button_hero_projects {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hero_btn {
+  height: 5.4rem;
+  width: 24rem;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--t-c);
+  border-radius: 12rem;
+  transition: 0.3s;
+  color: var(--t-c);
+  border: 0.2rem solid var(--r-c);
+  letter-spacing: 0.2rem;
+}
+.hero_btn:hover {
+  background-color: var(--r-c);
+  font-size: 2rem;
+}
+/* ==== Testinomals == */
+.testonomials {
+  background-image: url(../Images/MyYay.png), url(../Images/MyFillstar.png),
+    url(../Images/Myyoutube.png);
+  background-size: 7rem 7rem, 5rem, 8rem;
+  background-repeat: no-repeat;
+  background-position: 15% 5%, 70% 51%, 5% 100%;
+  margin-top: 10rem;
+  height: 70rem;
+}
+.main_tes_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+  column-gap: 5rem;
+}
+.tes_card {
+  height: 20rem;
+  width: 29rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--r-c);
+  background-color: #001638;
+}
+.tes_card_text {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+}
+.tes_card_text h1 {
+  text-align: left;
+  font-weight: 100;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--t-c);
+}
+.tes_card_text h2 {
+  font-family: monospace;
+  font-size: 1.3rem;
+  color: var(--r-c);
+}
+.toolbelt {
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+.toolbelt_imgs {
+  margin: 0 2vw;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+.B_toolbelt_icon {
+  color: var(--r-c);
+  height: 8rem;
+  width: 8rem;
+  transition: 0.4s;
+}
+.B_toolbelt_icon:hover {
+  color: var(--t-c);
+  animation: animate__tada ease-in;
+}
+.toolbelt_s_imgs {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  align-items: center;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+  opacity: 0.9;
+}
+.S_toolbelt_icon {
+  color: var(--r-c);
+  height: 5rem;
+  width: 5rem;
+  transition: 0.2s;
+}
+.S_toolbelt_icon:hover {
+  color: var(--t-c);
+  animation: animate__tada ease-in;
+}
+
+/* ========== Responsive Css========== */
+/* ==========For Ipads ============ */
+@media (max-width: 1260px) {
+  .main_txt {
+    height: 90vh;
+    background-size: 18rem 18rem, 4.5rem 4.5rem, 4.5rem 4.5rem, 9rem 9rem,
+      6rem 6rem, 13.5rem 13.5rem;
+    background-position: 5% 90%, 20% 70%, 97% 14%, 5% 18%, 95% 90%, 85% 80%;
+  }
+  .txt {
+    margin: 0 5vw;
+    padding-top: 20vh;
+  }
+  .txt p {
+    font-size: 5rem;
+  }
+  .txt h1 {
+    font-size: 8rem;
+  }
+  .h_btn {
+    border: 0.3rem solid var(--r-c);
+  }
+  /* =====POrtfolio===== */
+  .home_portfolio_projects_parent {
+    background-image: url(../Images/MyLaptop.png), url(../Images/MyNextJs.png);
+    background-size: 12rem, 7rem;
+    background-position: 95% 94%, 3% -4%;
+  }
+  .hero_btn {
+    height: 6rem;
+    width: 36rem;
+    border: 0.3rem solid var(--r-c);
+  }
+  .button_hero_projects {
+    margin-top: 2rem;
+  }
+
+  /* ===== Testinomials */
+  .testonomials {
+    background-position: 10% 3%, 85% 62%, 5% 96%;
+    background-size: 8rem, 5rem, 8rem;
+    height: 130rem;
+  }
+  .tes_card {
+    height: 20rem;
+    width: 90vw;
+  }
+  .tes_card_text h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+  .tes_card_text h2 {
+    font-size: 2rem;
+  }
+
+  .toolbelt_imgs {
+    column-gap: 8vw;
+    row-gap: 4vh;
+  }
+  .B_toolbelt_icon {
+    height: 9rem;
+    width: 9rem;
+  }
+  .S_toolbelt_icon {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+
+  .toolbelt_s_imgs {
+    column-gap: 6vw;
+    row-gap: 3vh;
+  }
+}
+/* ========== For Mobiles=========== */
+@media (max-width: 767px) {
+  .main_txt {
+    height: 90vh;
+    background-size: 15rem 15rem, 4rem 4rem, 4rem 4rem, 8rem 8rem, 5rem 5rem,
+      11rem 11rem;
+    background-position: 5% 90%, 20% 77%, 97% 10%, 5% 14%, 95% 90%, 90% 80%;
+  }
+  .txt {
+    margin: 0 2vw;
+    padding-top: 20vh;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .h_btn {
+    border: 0.3rem solid var(--r-c);
+  }
+  .home_portfolio_projects_parent {
+    background-size: 10rem, 6rem;
+    background-position: 95% 98%, 1% -3%;
+  }
+  .button_hero_projects {
+    margin-top: 3rem;
+  }
+  .testonomials {
+    background-position: 2% 3%, 94% 66%, 5% 96%;
+    background-size: 8rem, 5rem, 8rem;
+    height: 125rem;
+  }
+  .tes_card {
+    height: 21rem;
+    width: 90vw;
+  }
+  .tes_card_text h1 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  .toolbelt {
+    margin: 5rem 0 10rem 0;
+  }
+  .B_toolbelt_icon {
+    height: 8rem;
+    width: 8rem;
+  }
+  .S_toolbelt_icon {
+    height: 5rem;
+    width: 5rem;
+  }
+  .toolbelt_imgs {
+    column-gap: 4vw;
+    row-gap: 3vh;
+  }
+  .toolbelt_s_imgs {
+    column-gap: 4vw;
+    row-gap: 2vh;
+  }
+}
+
+/* ======For Smaller Screens======= */
+@media (max-width: 400px) {
+  .main_txt {
+    height: 86vh;
+    background-size: 15rem 15rem, 4rem 4rem, 4rem 4rem, 8rem 8rem, 5rem 5rem,
+      11rem 11rem;
+    background-position: 5% 90%, 20% 77%, 97% 10%, 5% 10%, 95% 90%, 90% 80%;
+  }
+  .txt {
+    margin: 0 2vw;
+    padding-top: 20vh;
+  }
+  .txt h1 {
+    font-size: 5.5rem;
+  }
+  .testonomials {
+    background-position: 0% 4%, 97% 64%, 5% bottom;
+    background-size: 8rem, 4rem, 5rem;
+    height: 130rem;
+  }
+  .tes_card {
+    height: 21rem;
+    width: 90vw;
+  }
+
+  .tes_card_text h2 {
+    font-size: 1.6rem;
+  }
+  .toolbelt {
+    margin: 5rem 0 10rem 0;
+  }
+  .B_toolbelt_icon {
+    height: 8rem;
+    width: 8rem;
+  }
+  .S_toolbelt_icon {
+    height: 5rem;
+    width: 5rem;
+  }
+  .toolbelt_imgs {
+    column-gap: 4vw;
+    row-gap: 3vh;
+  }
+  .toolbelt_s_imgs {
+    column-gap: 4vw;
+    row-gap: 2vh;
+  }
+}
+@media (max-width: 230px) {
+  .main_txt {
+    height: 87vh;
+    background-size: 15rem 15rem, 4rem 4rem, 4rem 4rem, 8rem 8rem, 5rem 5rem,
+      11rem 11rem;
+    background-position: 5% 90%, 20% 77%, 97% 10%, 5% 10%, 95% 90%, 90% 80%;
+  }
+  .h_btn {
+    border: 0.35rem solid var(--r-c);
+  }
+  .txt {
+    margin: 0 2vw;
+    padding-top: 20vh;
+  }
+  .txt h1 {
+    font-size: 5.5rem;
+  }
+  .testonomials {
+    background-position: 0% 8%, 98% 62%, 5% 99%;
+    background-size: 8rem, 4rem, 4rem;
+    height: 135rem;
+  }
+}

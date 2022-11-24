@@ -1,0 +1,53 @@
+  .heading_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 5vw;
+    row-gap: 0.6rem;
+    font-family: monospace;
+  }
+  .heading_container h1{
+    text-align: center;
+    color: var(--t-c);
+    transition: .5s;
+    font-size: 3rem;
+  }
+  hr {
+    width: 25rem;
+    height: 0.5rem;
+    border: var(--r-c);
+    color: var(--r-c);
+    transition: .5s;
+    background-color: var(--r-c);
+  }
+   /* ========== Responsive Css========== */
+/* ==========For Ipads ============ */
+@media (max-width: 1260px) {
+  .heading_container h1{
+    font-size: 4rem;
+  }
+  hr {
+    width: 35rem;
+    height: 0.6rem;
+  }
+
+    }
+    /* ========== For Mobiles=========== */
+    @media (max-width: 767px) {
+      .heading_container h1{
+        font-size: 3.2rem;
+        margin: 0 2.8rem;
+      }
+      hr {
+        width: 35rem;
+        height: 0.7rem;
+      }
+    }
+    @media (max-width: 360px) {
+      hr {
+        width: 26rem;
+      }
+    }
+
