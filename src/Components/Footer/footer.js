@@ -55,7 +55,7 @@ const footer = () => {
           <a href="https://pin.it/1HmkWY2" target="_blank">
             <FaPinterest className="footer_icons" /> <p>PINTREST</p>{" "}
           </a>
-          <a href="https://github.com/hamzabie91" target="_blank">
+          <a href="https://github.com/codeshamza" target="_blank">
             <FaGithub className="footer_icons" /> <p>GITHUB</p>{" "}
           </a>
         </div>
