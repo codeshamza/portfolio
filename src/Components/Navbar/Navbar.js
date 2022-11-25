@@ -62,7 +62,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/hamzabie91" rel="noreferrer"  target={"_blank"}>
+                <a href="https://github.com/codeshamza" rel="noreferrer"  target={"_blank"}>
                   <FaGithub className="Social_Icon" />
                 </a>
               </li>
