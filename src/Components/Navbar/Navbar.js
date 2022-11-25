@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className="main_container">
           <div  className="logo">
             <img 
-                src="/portfolio/images/applogo.png"
+                src="images/applogo.png"
               className="animate__animated animate__rollIn"
               alt="Logo"
             />

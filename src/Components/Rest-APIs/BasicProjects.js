@@ -3,7 +3,7 @@ const Projects = [
     id: 1,
     heading :"Sonder.com Clone",
     url : "https://sonder-clone.netlify.app/",
-    img: "images/p10.png",
+    img: "/images/p10.png",
     desc: "A Responsive Clone Of Famous Next.js Hotel Website in Simple Html, CSS & JS.",
     categories: ["HTML & CSS", "JavaScript","Splide.js"],
   },
