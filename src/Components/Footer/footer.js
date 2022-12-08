@@ -13,7 +13,7 @@ import { GoLocation, GoPerson } from "react-icons/go";
 import { MdPhone } from "react-icons/md";
 import { TbTemplate } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
-import Switch from "../Switch/Switch.jsx"
+// import Switch from "../Switch/Switch.jsx"
 const footer = () => {
   return (
     <footer>
