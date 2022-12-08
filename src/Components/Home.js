@@ -11,6 +11,10 @@ import {
   SiWordpress,
   SiMaterialui,
   SiAdobeillustrator,
+  SiTailwindcss,
+  SiApostrophe,
+  SiJquery,
+  SiTypescript,
 } from "react-icons/si";
 import {
   
@@ -54,7 +58,7 @@ const Home = () => {
             </h1>
           </div>
           <div className="home_btns animate__animated animate__fadeIn">
-          <a  href="https://drive.google.com/file/d/1IYzC1hb-J77vvwdMen7gNkc3cqQD4PWu/view?usp=drivesdk"
+          <a  href="https://drive.google.com/file/d/1WXj_iWAhxRIva0uPvXVi1GnjJSK6vwcC/view?usp=sharing"
               target="_blank">
             <button className="h_btn" >
               Download CV
@@ -137,17 +141,18 @@ const Home = () => {
               <FaJs className="animate__animated animate__tada  B_toolbelt_icon" />
               <FaReact className="animate__animated animate__tada  B_toolbelt_icon" />
               <div className="toolbelt_s_imgs">
-                <SiAdobephotoshop className="animate__animated animate__rubberBand  S_toolbelt_icon" />
-                <SiAdobeillustrator className="animate__animated animate__rubberBand  S_toolbelt_icon" />
+                <SiJquery className="animate__animated animate__rubberBand  S_toolbelt_icon" />
+                <FaBootstrap className="animate__animated animate__rubberBand  S_toolbelt_icon" />
+                <SiMaterialui className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 <SiWordpress className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 <SiFirebase className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 <MdAnimation className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 <AiFillApi className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 <FaNpm className="animate__animated animate__rubberBand  S_toolbelt_icon" />
+                <SiTailwindcss className="animate__animated animate__rubberBand  S_toolbelt_icon" />
+                <SiTypescript className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 
                 <FaGitAlt className="animate__animated animate__rubberBand  S_toolbelt_icon" />
-                <FaBootstrap className="animate__animated animate__rubberBand  S_toolbelt_icon" />
-                <SiMaterialui className="animate__animated animate__rubberBand  S_toolbelt_icon" />
                 <FaSass className="animate__animated animate__rubberBand  S_toolbelt_icon" />
               </div>
             </div>

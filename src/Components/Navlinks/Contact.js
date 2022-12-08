@@ -103,7 +103,7 @@ import { HiMail } from "react-icons/hi";
              <HiMail className="social_contact_icon" /> 
           </div>
           </a>
-          <a href="tel:+923207038759" target="_blank" >
+          <a href="tel:+923214321008" target="_blank" >
           <div className="con_icon_child">
             <FaPhoneAlt className="social_contact_icon" />
           </div>

@@ -54,15 +54,42 @@ body {
     15rem 15rem;
   background-repeat: no-repeat;
   background-position: 5% 85%, 20% 60%, 95% 30%, 5% top, 95% 80%, 80% 70%;
-  animation: float 2.5s 1;
+  animation: float 3s 1;
 }
 @keyframes float {
-  20% {
+  0% {
+    opacity: 1;
     background-position: bottom;
   }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+   30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
   80% {
+    opacity: 1;
     background-position: top;
   }
+  100% {
+    opacity: 1;
+  }
+
 }
 .txt {
   display: flex;
@@ -72,8 +99,8 @@ body {
   flex-direction: column;
   justify-content: center;
   color: white;
-  animation-duration: 1.6s;
-  animation-delay: 1.7s;
+  animation-duration: 1.9s;
+  animation-delay: 1.8s;
   cursor: default;
 }
 .txt p {

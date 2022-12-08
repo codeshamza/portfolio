@@ -13,6 +13,7 @@ import { GoLocation, GoPerson } from "react-icons/go";
 import { MdPhone } from "react-icons/md";
 import { TbTemplate } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
+import Switch from "../Switch/Switch.jsx"
 const footer = () => {
   return (
     <footer>
@@ -64,7 +65,7 @@ const footer = () => {
           <a href="tel:+923207038759">
             <MdPhone className="footer_icons" /> <p>CALL</p>{" "}
           </a>
-          <a href="mailto:contacthamza91@gmail.com?body=Hi,%20kindly share detailed information%20 about the project.%20Also add attachements(if possible) to help us out in understanding the project more deeply. Thank You!"  target="_blank">
+          <a href="mailto:contacthamza91@gmail.com?body=Hi,%20Hamza"  target="_blank">
             <HiMail className="footer_icons" /> <p>EMAIL</p>{" "}
           </a>
           <a href="https://wa.me/923207038759"  target="_blank">
@@ -77,7 +78,7 @@ const footer = () => {
       </section>
 
       <section className="footer_copyright">
-       
+      {/* <Switch/> */}
         <div className="main_copyright_container">
           <img src="images/applogo.png" alt="Logo" />
           <h1> © 2022 - Designed And Developed By Hamza | Portfolio </h1>

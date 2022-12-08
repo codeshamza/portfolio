@@ -7,7 +7,7 @@ const Testinomials = [
 {
     id : 3,
     feedback : "We developed our website twice in 12 months. There was no comparison between the first developer and him. Professional, Creative, Attentive to Detail, Excellent Communication…Definitely Recommended.",
-    name : "Aaron Miller (Aeon System)"
+    name : "Aaron Miller (Adano Company)"
 },
 {
     id : 2,

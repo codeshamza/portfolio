@@ -120,7 +120,7 @@ footer {
   /* ========== For Mobiles=========== */
   @media (max-width: 767px) {
 .main_footer {
-  height: 50rem;
+  height: 60rem;
   flex-wrap: wrap;
 }
 .footer_link{
@@ -146,9 +146,9 @@ footer {
 }
   }
   /* for smaller screens */
-  @media (max-width: 390px) {
+  @media (max-width: 400px) {
     .main_footer {
-      height: 80rem;
+      height: 130rem;
       column-gap: 10vw;
     }
     .footer_link{
@@ -180,5 +180,12 @@ footer {
     .device_info{
       font-weight: 300;
       font-size: 1.5rem;
+      }
+      .footer_link {
+        display: flex;
+        font-weight: 600;
+        row-gap: 0.7rem;
+        color: var(--r-c);
+        width: 100vw;
       }
       }

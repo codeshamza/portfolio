@@ -1,7 +1,7 @@
 .main_about {
-  height: 50rem;
+  height: auto;
   display: flex;
-  row-gap: 2.5rem;
+  row-gap: 5rem;
   flex-direction: column;
 }
 .about_container {
@@ -22,7 +22,7 @@
 .about_container_child {
   height: 10rem;
   background-color: transparent;
-  width: 16rem;
+  width: 20rem;
   box-shadow: rgba(0, 238, 255, 0.4) 0rem -3rem 6rem -1.2rem inset,
     rgba(0, 242, 255, 0.6) 0rem 1.8rem 3.6rem -1.8rem inset;
   justify-content: center;
@@ -34,8 +34,8 @@
   transition: 0.5s;
 }
 .about_container_child:hover {
-  height: 10.2rem;
-  width: 16.5rem;
+  height: 10rem;
+  width: 21rem;
   box-shadow: rgba(0, 229, 255, 0.4) 0rem 5.4rem 5.5rem,
     rgba(0, 242, 255, 0.6) 0rem -1.2rem 3rem, rgba(0, 238, 255, 0.12) 0rem .4rem .6rem,
     rgba(0, 247, 255, 0.5) 0rem 1.2rem 1.3rem, rgba(5, 247, 255, 0.09) 0rem -.3rem .5rem;
@@ -50,6 +50,7 @@
 }
 .about_container_child span {
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* ========== Responsive Css========== */
@@ -57,9 +58,8 @@
 @media (max-width: 1260px) {
   .main_about {
     margin-top: 8rem;
-    height: 66rem;
     display: flex;
-    row-gap: 4rem;
+    row-gap: 6rem;
     flex-direction: column;
   }
   .about_container {
@@ -114,8 +114,6 @@
     @media (max-width: 560px) {
       .main_about {
         margin-top: 7rem;
-        height: 80rem;
-        row-gap: 4rem;
       }
       .about_container {
         row-gap: 2.5rem;
@@ -141,8 +139,7 @@
   @media (max-width: 420px) {
     .main_about {
       margin-top: 2rem;
-      height: 94rem;
-      row-gap: 3rem;
+      row-gap: 5rem;
     }
     .about_container {
       row-gap: 2.5rem;
@@ -168,7 +165,6 @@
   @media (max-width: 330px) {
     .main_about {
       margin-top: 4rem;
-      height: 95rem;
       row-gap: 5rem;
     }
     .about_container {

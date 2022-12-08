@@ -9,8 +9,8 @@ const IncrementCounter = () => {
         const targetcount = +counter.getAttribute("counter");
         const initialCount = +counter.innerHTML;
         if (initialCount < targetcount) {
-          counter.innerHTML = `${Math.round(initialCount + 1)}`;
-          setTimeout(updateCounter, 100);
+          counter.innerHTML = `${Math.round(initialCount + 1) }`;
+          setTimeout(updateCounter, 80);
         }
       };
       updateCounter();
@@ -20,19 +20,19 @@ const IncrementCounter = () => {
   return (
     <section className="about_increment_counter">
       <div className="about_container">
-      <Heading className="about_heading"  text="Projects" />
+      <Heading className="about_heading"  text="Freelancing Stats" />
       <div className="about_container_parent">
         <div className="about_container_child">
-          <span>Happy Clients</span>
-          <h1 className="counter" counter="40" id="number1"></h1>
+          <span>Total Clients</span>
+          <h1 className="counter" counter="13" id="number1"> </h1>
         </div>
         <div className="about_container_child">
-          <span>Completed Projects</span>
-          <h1 className="counter" counter="25" id="number2">+</h1>
+          <span>Projects (Contributed)</span>
+          <h1 className="counter" counter="17" id="number2"> </h1> 
         </div>
         <div className="about_container_child">
-          <span>Ongoing Projects</span>
-          <h1 className="counter" counter="3" id="number3"></h1>
+          <span>Long-term Clients</span>
+          <h1 className="counter" counter="7" id="number3"> </h1>
         </div>
         </div>
       </div>

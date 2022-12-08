@@ -1,5 +1,5 @@
 import React from 'react'
-import CircleLoader from "react-spinners/CircleLoader";
+import ClockLoader   from "react-spinners/ClockLoader";
 import App from './App';
 
 const Main = () => {
@@ -7,9 +7,8 @@ const [Loading, setLoading] = React.useState(false)
 React.useEffect(()=>{
 setLoading(true)
 setTimeout(()=>{
-  if("DOMContentLoaded")
   setLoading(false)
-},500)
+},3000)
 
 },[])
 const override = {
@@ -20,7 +19,7 @@ const override = {
     <>
      {
       Loading ? 
-  <CircleLoader color={"#61dbfb"} Loading={Loading} cssOverride={override} size={100} />
+  <ClockLoader   color={"#61dbfb"} Loading={Loading} cssOverride={override} size={100} />
       :
       <App/>
      }

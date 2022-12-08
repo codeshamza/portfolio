@@ -13,7 +13,7 @@ const About = () => {
       <Navbar />
       <section className="main_about">
         <div className="about_container">
-        <Heading text="Myself" />
+        <Heading text="Basic" />
         <div className="about_container_parent">
           { Aboutd.map((curr) => {
             if(curr.id <= 4)
@@ -25,10 +25,22 @@ const About = () => {
           </div>
         </div>
         <div className="about_container">
-        <Heading text="Work" />
+        <Heading text="Skills" />
         <div className="about_container_parent">
           { Aboutd.map((curr) => {
-            if(curr.id > 4)
+            if(curr.id > 8)
+           return <div key={curr.id} className="about_container_child">
+              <span>   {curr.que}</span>
+              <h1>{curr.ans}</h1>
+            </div>;
+          })}
+          </div>
+        </div>
+        <div className="about_container">
+        <Heading text="Experience(Frontend)" />
+        <div className="about_container_parent">
+          { Aboutd.map((curr) => {
+            if(curr.id > 4 && curr.id < 8)
            return <div key={curr.id} className="about_container_child">
               <span>   {curr.que}</span>
               <h1>{curr.ans}</h1>
@@ -37,6 +49,8 @@ const About = () => {
           </div>
           
         </div>
+       
+    
         <IncrementCounter/>
       </section>
       <Connect text="Let's Make Something Special" />
