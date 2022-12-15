@@ -2,6 +2,8 @@ footer {
   box-shadow: rgba(0, 238, 255, 0.25) 0rem -3rem 6rem -1.2rem inset,
     rgba(0, 242, 255, 0.3) 0rem 1.8rem 3.6rem -1.8rem inset;
   font-family: sans-serif;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 .main_footer {
   display: flex;
@@ -70,7 +72,7 @@ footer {
 .footer_copyright img {
   height: 4rem;
   width: 4rem;
-  animation: myRotate 8s 0.1s linear infinite forwards;
+  animation: codepenfloat 4s 0.1s linear infinite forwards;
 
 }
 /* =====Animation==== */
@@ -80,6 +82,36 @@ footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes codepenfloat {
+  0%{
+   
+  }
+  20%{
+    box-shadow: none;
+  }
+  25% {
+    transform: translatey(5px);
+  }
+  50% {
+    transform: translatey(0px);
+    box-shadow: rgba(21, 212, 255, 0.4) 0px 5px, rgba(30, 195, 255, 0.3) 0px 10px, rgba(40, 169, 255, 0.2) 0px 15px, rgba(91, 222, 255, 0.1) 0px 20px, rgba(46, 211, 240, 0.05) 0px 25px;
+  }
+  75% {
+    transform: translatey(-5px);
+  }
+  
+80%{
+  box-shadow: rgb(0, 238, 255) 0px 0px 0px 0.15rem;
+  
+}
+  100% {
+    transform: translatey(0px);
+    box-shadow: none;
+
+
   }
 }
 

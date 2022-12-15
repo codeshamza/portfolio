@@ -7,6 +7,7 @@ import {
   FaHome,
   FaWhatsapp,
   FaGithub,
+  FaSkype,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GoLocation, GoPerson } from "react-icons/go";
@@ -50,15 +51,17 @@ const footer = () => {
           <a href="https://www.linkedin.com/in/hamza-reactjsdeveloper/" target="_blank">
             <FaLinkedinIn className="footer_icons" /> <p>LINKEDIN</p>{" "}
           </a>
-          <a href="https://www.instagram.com/code_with_stuff/"  target="_blank">
-            <FaInstagram className="footer_icons" /> <p>INSTAGRAM</p>{" "}
-          </a>
-          <a href="https://pin.it/1HmkWY2" target="_blank">
-            <FaPinterest className="footer_icons" /> <p>PINTREST</p>{" "}
-          </a>
           <a href="https://github.com/codeshamza" target="_blank">
             <FaGithub className="footer_icons" /> <p>GITHUB</p>{" "}
           </a>
+          <a href="skype:live:.cid.b67312bcda036f61?chat" target="_blank">
+            <FaSkype className="footer_icons" /> <p>PINTREST</p>{" "}
+          </a>
+          <a href="https://www.instagram.com/techlab_hamza/"  target="_blank">
+            <FaInstagram className="footer_icons" /> <p>INSTAGRAM</p>{" "}
+          </a>
+       
+
         </div>
         <div className="footer_link">
           <h1>Contact Info</h1>
@@ -80,7 +83,7 @@ const footer = () => {
       <section className="footer_copyright">
       {/* <Switch/> */}
         <div className="main_copyright_container">
-          <img src="images/applogo.png" alt="Logo" />
+          <img src="logo.png" alt="Logo" />
           <h1> © 2022 - Designed And Developed By Hamza | Portfolio </h1>
         </div>
         <div className="footer_device_info">

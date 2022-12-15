@@ -8,7 +8,7 @@ React.useEffect(()=>{
 setLoading(true)
 setTimeout(()=>{
   setLoading(false)
-},3000)
+},0)
 
 },[])
 const override = {

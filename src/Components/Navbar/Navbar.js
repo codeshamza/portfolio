@@ -5,6 +5,8 @@ import {
   FaInstagram,
   FaPinterest,
   FaGithub,
+  FaLinkedin,
+  FaSkype,
 } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 import { NavLink } from "react-router-dom";
@@ -17,7 +19,7 @@ const Navbar = () => {
         <nav className="main_container">
           <div  className="logo">
             <img 
-                src="images/applogo.png"
+                src="logo.png"
               className="animate__animated animate__rollIn"
               alt="Logo"
             />
@@ -45,20 +47,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="social_links">
-            <ul className="desktop_icons">
+            <ul className="desktop_icons">   
               <li>
                 <a href="https://www.linkedin.com/in/hamza-reactjsdeveloper/" rel="noreferrer"  target={"_blank"}>
-                  <FaLinkedinIn className="Social_Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/code_with_stuff/" rel="noreferrer"  target={"_blank"}>
-                  <FaInstagram className="Social_Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="https://pin.it/1HmkWY2" rel="noreferrer"  target={"_blank"}>
-                  <FaPinterest className="Social_Icon" />
+                  <FaLinkedin className="Social_Icon" />
                 </a>
               </li>
               <li>
@@ -66,8 +58,17 @@ const Navbar = () => {
                   <FaGithub className="Social_Icon" />
                 </a>
               </li>
+              <li>
+                <a href="skype:live:.cid.b67312bcda036f61?chat" rel="noreferrer"  target={"_blank"}>
+                  <FaSkype className="Social_Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/techlab_hamza/" rel="noreferrer"  target={"_blank"}>
+                  <FaInstagram className="Social_Icon" />
+                </a>
+              </li>
             </ul>
-
             <div
               onClick={() =>
                 showMobileMenu === false

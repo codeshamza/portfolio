@@ -6,6 +6,7 @@ import "./Components/Navbar/Navbar.css"
 import Contact from "./Components/Navlinks/Contact";
 import Portfolio from "./Components/Navlinks/Portfolio"
 import NoPage from "./Components/Navlinks/Nopage"
+// import BasicCard from "./Components/SelectVersion/Selectversion.jsx";
 const App = () => {
   
    return (

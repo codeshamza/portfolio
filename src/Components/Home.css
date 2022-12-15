@@ -24,6 +24,18 @@ html {
   --r-c: #61dbfb;
 }
 
+/* ==Themes==== */
+.theme-light {
+  --p-c: rgb(255, 255, 255) !important;
+  --t-c: white !important;
+  --r-c: #f3f3f3 !important;
+}
+.theme-dark {
+  --p-c: rgba(0, 10, 31, 1);
+  --t-c: rgb(39, 39, 39);
+  --r-c: #ff0000;
+}
+
 /* ==========ScrollBar======= */
 ::-webkit-scrollbar {
   width: 0.3rem;

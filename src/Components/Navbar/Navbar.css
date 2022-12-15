@@ -21,10 +21,10 @@ nav{
     height: 7rem;
     width: 7rem;
     transition: 1s;
+    cursor: pointer;
   }
   .logo img:hover {
- 
-    animation: myRotate 3s infinite linear;
+    animation: codepenfloat 2.5s infinite linear;
   }
   
   /* ========Rotating Anime======== */
@@ -36,6 +36,28 @@ nav{
       transform: rotate(0deg);
     }
 
+  }
+  @keyframes codepenfloat {
+    20%{
+      box-shadow: none;
+    }
+    25% {
+      transform: translatey(5px);
+    }
+    50% {
+      transform: translatey(0px);
+      box-shadow: rgba(21, 212, 255, 0.4) 0px 5px, rgba(30, 195, 255, 0.3) 0px 10px, rgba(40, 169, 255, 0.2) 0px 15px, rgba(91, 222, 255, 0.1) 0px 20px, rgba(46, 211, 240, 0.05) 0px 25px;
+    }
+    75% {
+      transform: translatey(-5px);
+    }
+  85%{
+    box-shadow: none;
+  }
+    100% {
+      transform: translatey(0px);
+  
+    }
   }
   
   /* ==============Menu Links============ */
